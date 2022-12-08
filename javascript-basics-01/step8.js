@@ -1,8 +1,12 @@
-var n= prompt("what is your age? ");
-if( n > 18)
-{
-    alert("you are over 18");
-}
-else{
-    alert("you are under 18");
-}
+
+var x= document.getElementById("validate");
+
+x.onclick = function checkAge() {
+  var age = document.getElementById("age").value;
+
+  if (age > 18) {
+    alert("You are over 18");
+  } else {
+    alert("You are under 18");
+  }
+};
