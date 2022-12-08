@@ -1,5 +1,8 @@
-var n1= prompt("what is the number1");
-var n2= prompt("what is the number2");
-document.getElementById(first_number).value=n1;
-document.getElementById(second_number).value=n2;
-alert(n1 * n2);
+alert("Please enter 2 numbers to multiply");
+var btn = document.getElementById("validate");
+
+btn.onclick = function multiply(a, b) {
+  var a = document.getElementById("first_number").value;
+  var b = document.getElementById("second_number").value;
+  return alert(a * b);
+};
